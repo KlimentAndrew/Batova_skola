@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotogalerie</title>
+  <link rel="icon"  type="/images/logonahoru.png"  href="./images/lepsilogo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="scroll-progress-bar"></div>
+
+<header class="navbar">
+  <div class="logo"></div>
+  <nav class="menu">
+    <a href="fotogalerie.html">FOTOGALERIE</a>
+    <a href="index.html">O NÁS</a>
+    <a href="bata.html">BAŤA</a>
+    <a href="kontakty.html">KONTAKTY</a>
+  </nav>
+</header>
+</section>
+
+<div class="fade-transition"></div>
+
+<div class="logo-k">
+  <img class="logo-kontakty" src="./images/logo2.png" alt="logo" />
+</div>
+<main class="gallery-main">
+  <h1>Fotogalerie</h1>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="images/BSP---vlajky-národů-web.jpg" alt="FOTO 1">
+      <div class="overlay">
+        <p>Representanti národů procházející výcvikem Baťovy školy práce ve Zlíně se svými vlajkami před budovou školy.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/BSP-sport.slavnost-web.jpg" alt="FOTO 2">
+      <div class="overlay">
+        <p>Každoroční sportovní slavnost zlínské průmyslové mládeže, žáků a žaček Baťovy školy práce.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/první-máj-web.jpg" alt="FOTO 3">
+      <div class="overlay">
+        <p>Oslavy prvního máje (zde rok 1935), mladí muži.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="gallery-main">
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="images/draha.jpg" alt="FOTO 4">
+      <div class="overlay">
+        <p>Lanová dráha zaručující nerušenou dopravu materiálu do konfekčních dílen v roce 1933
+        </p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/bsp-tomasov-web.jpg" alt="FOTO 5">
+      <div class="overlay">
+        <p>Internát mladých mužů - Tomášovců. Po válce a zapuzení principů BŠP sloužila budova až do devadesátých let jako nemocniční zařízení Svit pro závažné kardiologické případy.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/prace.jpg" alt="FOTO 6">
+      <div class="overlay">
+        <p>Náměstí Práce během polední přestávky kde studenti a pracovníci odpočívali</p>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="gallery-main">
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="images/bsp-sicky-web.jpg" alt="FOTO 4">
+      <div class="overlay">
+        <p>V BAŤOVĚ ŠKOLE PRÁCE vychovávali i mladé ženy, v roce 1933 se zde učilo na 600 děvčat. Na snímku pohled do šicí dílny, kde pracují uniformované mladé ženy Baťovy školy práce.
+
+        </p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/areal.jpg" alt="FOTO 5">
+      <div class="overlay">
+        <p> Tovární areál během prvomájových oslav v roce 1932</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/domy.jpg" alt="FOTO 6">
+      <div class="overlay">
+        <p> typickým druhem obytné stavby ve Zlíně a baťovských satelitech. V počátcích rozvoje firmy ve Zlíně zkoušel Tomáš Baťa stavět čtyřdomky s valbovou střechou. Později však přešel k jednoduchému typu stavby z červených cihel s betonovou podezdívkou, a to pro čtyři, dvě či jednu rodinu.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<div class="fade-transition-footer"></div>
+<footer class="footer-new">
+  <div class="footer-new-container">
+    <div class="footer-new-column">
+      <h3>Tomáš Baťa</h3>
+      <p>Vizionář, podnikatel a zakladatel moderního Zlína. Jeho odkaz žije dál v hodnotách, které škola předává studentům.</p>
+    </div>
+
+    <div class="footer-new-column">
+      <h3>Rychlé odkazy</h3>
+      <ul>
+        <li><a href="fotogalerie.html">Fotogalerie</a></li>
+        <li><a href="index.html">O Nás</a></li>
+        <li><a href="bata.html">Baťa</a></li>
+        <li><a href="kontakty.html">Kontakty</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-new-column">
+      <h3>"Neříkej, že to nejde, řekni, že to zatím neumíš."</h3>
+      <p class="footer-signature">– Tomáš Baťa</p>
+    </div>
+  </div>
+
+  <div class="footer-new-bottom">
+    <p>@Copyright 2025 Baťova škola práce.</p>
+  </div>
+</footer>
+
+
+
+</body>
+<script>
+  window.addEventListener('scroll', function () {
+    const scrollBar = document.getElementById('scroll-progress-bar');
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollBar.style.width = scrollPercent + '%';
+  });
+</script>
+</html>
