@@ -4,54 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baťova škola práce</title>
+    <link rel="icon"  type="/images/logo"  href="./images/tb-logo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div id="scroll-progress-bar"></div>
 
 <header class="navbar">
 
     <nav class="menu">
         <a href="#">FOTOGALERIE</a>
         <a href="index.html">O NÁS</a>
-        <a href="#">BAŤA</a>
-        <a href="#">KONTAKTY</a>
+        <a href="bata.html">BAŤA</a>
+        <a href="kontakty.html">KONTAKTY</a>
     </nav>
 </header>
 
-<main class="content">
-    <h3></h3>
-    <div class="cards">
-        <div class="card">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                vehicula felis ac mauris facilisis, eu tincidunt metus lacinia.
-                Aliquam erat volutpat.
-            </p>
+<main class="content-bata">
+    <h2>TOMÁŠ BAŤA</h2>
+    <h3>československý podnikatel, „král obuvi“</h3>
+    <div class="cards-wrapper">
+        <div class="card card-left">
+            <h4>Tomáš Baťa jako podnikatel</h4>
+            <p>Tomáš Baťa byl jedním z nejvýznamnějších českých podnikatelů 20. století. Jeho firma Baťa, založená ve Zlíně, se díky inovativní výrobě a důrazu na kvalitu obuvi rozrostla do celosvětového impéria. Prosazoval efektivitu, jednoduchost a dostupnost – boty pro každého.</p>
         </div>
-        <div class="card">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                vehicula felis ac mauris facilisis, eu tincidunt metus lacinia.
-                Aliquam erat volutpat.
-            </p>
+        <div class="card card-right">
+            <h4>Baťova filozofie a přístup k práci</h4>
+            <p>Baťa věřil, že úspěch firmy závisí na vzdělaných a spokojených zaměstnancích. Zaváděl moderní systém odměňování, školení, a podporoval pracovní morálku. Spojoval podnikání s etikou a společenskou odpovědností, čímž předběhl svou dobu.</p>
         </div>
-        <div class="card">
-            <p>
-
-            </p>
+        <div class="card card-left">
+            <h4>Zlín – město podle Baťových pravidel</h4>
+            <p>Pod vedením Tomáše Bati se Zlín proměnil v moderní město s jedinečnou urbanistickou koncepcí. Pravidelná síť ulic, jednotná architektura a propojení bydlení, práce i volného času odrážely jeho vizi funkčního a harmonického městského života. Zlín se stal vzorem pro plánování měst nejen v Československu, ale i v zahraničí.</p>        </div>
+        <div class="card card-right">
+            <h4>Baťova obuv dobývá svět</h4>
+            <p>Baťův podnik se v 30. letech stal jedním z největších výrobců obuvi na světě. Vznikaly pobočky ve více než 50 zemích – od Evropy až po Jižní Ameriku, Indii či Afriku. Každá z nich fungovala na základě stejných principů: efektivita, kvalita, místní výroba a školení personálu. Díky tomu značka Baťa zdomácněla po celém světě a dodnes zůstává symbolem kvalitní obuvi i podnikatelské vize.</p>
         </div>
     </div>
 </main>
+<footer class="footer-new">
+    <div class="footer-new-container">
+        <div class="footer-new-column">
+            <h3>Tomáš Baťa</h3>
+            <p>Vizionář, podnikatel a zakladatel moderního Zlína. Jeho odkaz žije dál v hodnotách, které škola předává studentům.</p>
+        </div>
 
-<footer class="footer">
-    <nav class="menu">
-        <a href="#">FOTOGALERIE</a>
-        <a href="index.html">O NÁS</a>
-        <a href="#">BAŤA</a>
-        <a href="#">KONTAKTY</a>
-    </nav>
+        <div class="footer-new-column">
+            <h3>Rychlé odkazy</h3>
+            <ul>
+                <li><a href="#">Fotogalerie</a></li>
+                <li><a href="#">O Nás</a></li>
+                <li><a href="#">Baťa</a></li>
+                <li><a href="#">Kontakty</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-new-column">
+            <h3>"Neříkej, že to nejde, řekni, že to zatím neumíš."</h3>
+            <p class="footer-signature">– Tomáš Baťa</p>
+        </div>
+    </div>
+
+    <div class="footer-new-bottom">
+        <p>@Copyright 2025 Baťova škola práce.</p>
+    </div>
 </footer>
-
 </body>
+<script>
+    window.addEventListener('scroll', function () {
+        const scrollBar = document.getElementById('scroll-progress-bar');
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        scrollBar.style.width = scrollPercent + '%';
+    });
+</script>
 </html>

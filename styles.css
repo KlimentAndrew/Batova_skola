@@ -23,7 +23,6 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 550px;
     z-index: 100;
     font-style: normal;
 
@@ -40,7 +39,8 @@ body, html {
 .menu {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+
 }
 
 
@@ -48,9 +48,10 @@ body, html {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 50px;
     border-radius: 5px;
     transition: background 0.3s;
+
 
 }
 
@@ -102,42 +103,384 @@ body, html {
 }
 
 
-.content {
-    height: 100%;
+.content-bata {
+    height: 1500px;
     background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
             url('/images/tomas-bata-logo - kopie.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 30%;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 60px 20px;
-    text-align: center;
 }
 
-.content h3 {
-    font-size: 2rem;
-    margin-bottom: 40px;
+.content-bata h2 {
+    font-size: 55px;
+    margin-bottom: -10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(255, 255, 255);
+
 }
 
-.cards {
+.content-bata h3 {
+    font-size: 24px;
+    margin-bottom: -14%;
+    margin-left: -17%;
+    margin-right: 2%;
+    color: #000000;
+}
+
+.cards-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-right: -30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px; /* větší mezery mezi boxy */
+    margin-top: 120px;
 }
 
 .card {
-    background-color: #f5f5f5;
-    padding: 20px;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-align: left;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    font-weight: bold;
 }
+
+.card h4 {
+    font-size: 40px;
+}
+
+.card p {
+    font-size: 20px;
+    color: #333333;
+}
+
+.card-left {
+    margin-left: 60%;
+}
+
+.card-right {
+    align-self: flex-end;
+}
+
+
+/* PŘECHOD mezi hero a obsahem */
+.fade-transition {
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #d3d3d3);
+}
+
+/* OBSAHOVÉ KARTY */
+.content {
+    background-color: #d3d3d3;
+    padding: 60px 20px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 140px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 520px;
+    min-height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover {
+
+    transform: scale(1.5);
+    z-index: 10;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.card img:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h2 {
+    font-size: 40px;
+}
+
+/* Styl obrázku uvnitř karty */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.fade-transition-footer {
+    height: 200px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #d3d3d3);
+}
+
+.footer-new {
+
+    color: #333;
+    font-size: 15px;
+}
+
+.footer-new-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+}
+
+.footer-new-column {
+    flex: 1 1 300px;
+}
+
+.footer-new-column h3 {
+    color: #e04c4c;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.footer-new-column p {
+    line-height: 1.6;
+}
+
+.footer-new-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-new-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-new-column ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-new-column ul li a:hover {
+    color: #e04c4c;
+}
+
+.footer-signature {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.footer-new-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(67, 67, 67);
+    color: #000000;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+}
+
+
+.logo-k {
+    width: 100%;
+    background-color: #d3d3d3;
+}
+
+.logo-kontakty {
+    background-color: #d3d3d3;
+    padding-left: 30%;
+}
+
+.contact-map-wrapper {
+    background-color: #d3d3d3;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-map-box {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.contact-map-wrapper {
+    background-color: #d3d3d3;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-map-box {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1500px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-map {
+    flex: 1 1 300px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.contact-info{
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 62px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #e04c4c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-map {
+    min-height: 300px;
+}
+
+.form-wrapper-wide {
+    background-color: #d3d3d3;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-box-wide {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1500px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.form-content {
+    flex: 1 1 600px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.form-content h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 2%;
+    background-color: #ff0000;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Bebas Neue", cursive;
+}
+
+form button:hover {
+    background-color: #ff0000;
+}
+
+.form-image {
+    flex: 1 1 600px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.form-image img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin: 3% 6%;
+    border-radius: 16px;
+}
+
+#scroll-progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: #ff0000;
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
+
 

@@ -11,56 +11,68 @@
 <body>
 <div id="scroll-progress-bar"></div>
 
-
 <header class="navbar">
     <div class="logo"></div>
     <nav class="menu">
         <a href="#">FOTOGALERIE</a>
-        <a href="#">O NÁS</a>
+        <a href="index.html">O NÁS</a>
         <a href="bata.html">BAŤA</a>
         <a href="kontakty.html">KONTAKTY</a>
     </nav>
 </header>
-
-<section class="hero">
-    <div class="hero-text">
-        <img src="/images/logo3.png" alt="logo" />
-    </div>
 </section>
 
 <div class="fade-transition"></div>
 
+<div class="logo-k">
+    <img class="logo-kontakty" src="./images/logo2.png" alt="logo" />
+</div>
 <main class="content">
-    <section class="row">
-        <div class="card">
-            <img src="/images/pohyb-je-zivot.jpg" alt="Popis obrázku">
+    <section class="contact-map-wrapper">
+        <div class="contact-map-box">
+            <div class="contact-info">
+                <h2>Kontakt</h2>
+                <p><strong>Adresa:</strong><br> Nad Ovčírnou IV 2528<br>760 01 Zlín</p>
+                <p><strong>Telefon:</strong><br><a href="tel:+420577006111">+420 577 006 111</a></p>
+                <p><strong>E-mail:</strong><br><a href="mailto:info@batovaskolaprace.cz">info@batovaskolaprace.cz</a></p>
+                <p><strong>Otevírací doba:</strong><br>Po–Pá: 7:30 – 15:00</p>
+            </div>
+            <div class="contact-map">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2641.6956146489553!2d17.671832415659126!3d49.22402757932621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471370c879c24a91%3A0xf13078b81e57fa82!2sNad%20Ov%C4%8D%C3%ADrnou%20IV%202528%2C%20760%2001%20Zl%C3%ADn%201!5e0!3m2!1scs!2scz!4v1717760300000!5m2!1scs!2scz"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
-        <div class="card">
-            <h2>Baťova škola práce — Tradice, která tvoří budoucnost</h2>
-            <p>Věříme, že poctivá práce, osobní rozvoj a podnikavý duch jsou základem úspěchu. Naše škola navazuje na odkaz Tomáše Bati a připravuje mladé lidi na reálný život — s důrazem na praxi, charakter a odpovědnost </p>
+    </section>
+    <section class="form-wrapper-wide">
+        <div class="form-box-wide">
+            <div class="form-content">
+                <h2>CHCEME VĚDĚT VÁŠ NÁZOR</h2>
+                <form>
+                    <label for="name">Jméno:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Zpráva:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <p></p>
+                    <button type="submit">ODESLAT</button>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="images/formular-foto.jpg" alt="obrázek" />
+            </div>
         </div>
     </section>
 
-    <section class="row">
-        <div class="card">
-            <h2>Kdo jsme...</h2>
-            <p>Baťova škola práce vznikla jako revoluční koncept vzdělávání, kde se spojovala výuka s reálnou praxí v podniku. Dnes pokračujeme v této tradici a vzděláváme mladé lidi tak, aby se stali nejen odborníky ve svém oboru, ale i slušnými, pracovitými a samostatnými lidmi. Inspirujeme se principy Tomáše Bati: služba společnosti, kvalita, skromnost a leadership.</p>
-        </div>
-        <div class="card">
-            <img src="/images/skola-lidi.jpg" alt="Popis obrázku">
-        </div>
-    </section>
 
-    <section class="row">
-        <div class="card">
-            <img src="/images/polytechna.jpg" alt="Popis obrázku">
-        </div>
-        <div class="card">
-            <h2>Jak funguje Baťova škola dnes</h2>
-            <p>Baťova škola práce dnes propojuje tradiční hodnoty s moderním vzděláváním. Teorie tu není cílem, ale nástrojem – důraz klademe na praxi, odpovědnost a osobní rozvoj. Studenti od začátku řeší reálné úkoly, učí se spolupracovat, přemýšlet a jednat samostatně.</p>
-            <p>Vychováváme lidi, kteří si umí poradit – v práci i v životě.</p>
-        </div>
-    </section>
+
+
+
 </main>
 
 <div class="fade-transition-footer"></div>
@@ -94,7 +106,6 @@
 
 
 
-
 </body>
 <script>
     window.addEventListener('scroll', function () {
@@ -105,5 +116,4 @@
         scrollBar.style.width = scrollPercent + '%';
     });
 </script>
-
 </html>
