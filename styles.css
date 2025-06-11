@@ -105,12 +105,12 @@ body, html {
 
 
 .content-bata {
-    height: 1500px;
+    height: 1800px;
     background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
             url('/images/tomas-bata-logo - kopie.jpg');
     background-size: cover;
-    background-position: 30%;
+    background-position: 35%;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
@@ -139,8 +139,10 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px; /* větší mezery mezi boxy */
-    margin-top: 120px;
+    gap: 100px;
+    margin-top: 150px;
+    width: 800px;
+
 }
 
 .card {
@@ -148,7 +150,7 @@ body, html {
     padding: 20px 40px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 1000px;
+    width: 1200px;
     font-weight: bold;
 }
 
@@ -163,6 +165,7 @@ body, html {
 
 .card-left {
     margin-left: 60%;
+
 }
 
 .card-right {
@@ -196,8 +199,8 @@ body, html {
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    width: 520px;
-    min-height: 200px;
+    width: 700px;
+    min-height: 300px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -209,6 +212,7 @@ body, html {
     transition: transform 0.7s ease, box-shadow 0.7s ease;
     position: relative;
     z-index: 1;
+
 }
 
 .card:hover {
@@ -228,7 +232,11 @@ body, html {
 }
 
 .card h2 {
-    font-size: 40px;
+    font-size: 60px;
+}
+
+.card p {
+    font-size: 25px;
 }
 
 /* Styl obrázku uvnitř karty */
@@ -244,10 +252,25 @@ body, html {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #d3d3d3);
 }
 
+.fade-transition-footer-i {
+    height: 200px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #d3d3d3);
+}
+
+.fade-transition-footer-f {
+    height: 200px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #d3d3d3);
+}
+
+.fade-transition-i {
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #d3d3d3);
+}
+
 .footer-new {
 
     color: #333;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .footer-new-container {
@@ -268,7 +291,7 @@ body, html {
 .footer-new-column h3 {
     color: #e04c4c;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 35px;
 }
 
 .footer-new-column p {
@@ -375,7 +398,7 @@ body, html {
 
 .contact-info h2 {
     margin-bottom: 20px;
-    font-size: 62px;
+    font-size: 72px;
 }
 
 .contact-info p {
@@ -425,7 +448,7 @@ body, html {
 
 .form-content h2 {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 52px;
 }
 
 form label {
@@ -433,15 +456,16 @@ form label {
     margin-top: 15px;
     margin-bottom: 5px;
     font-weight: bold;
+    margin-left: -50%;
 }
 
 form input,
 form textarea {
-    width: 40%;
+    width: 60%;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 19px;
     box-sizing: border-box;
 }
 
@@ -450,16 +474,18 @@ form button {
     background-color: #ff0000;
     color: white;
     padding: 12px 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
+    width: 60%;
     transition: background-color 0.3s ease;
     font-family: "Bebas Neue", cursive;
 }
 
 form button:hover {
-    background-color: #ff0000;
+    background-color: rgba(240, 240, 240, 0.37);
+    color: red;
 }
 
 .form-image {
@@ -472,7 +498,7 @@ form button:hover {
     width: 90%;
     height: 90%;
     object-fit: cover;
-    margin: 3% 6%;
+    margin: 8% 6%;
     border-radius: 16px;
 }
 
@@ -563,9 +589,9 @@ form button:hover {
 }
 
 .content-bata-2 h2 {
-    font-size: 32px;
+    font-size: 36px;
     color: #fff;
-    max-width: 50%;
+    max-width: 35%;
     margin-left: 5%;
     text-align: center;
 }
@@ -581,3 +607,115 @@ form button:hover {
     background-color: #d3d3d3;
 }
 
+@media only screen and (max-width: 800px) {
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 100;
+        font-style: normal;
+
+    }
+
+    .menu {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .row {
+        gap: 50px;
+
+    }
+
+    .card-left, .card-right {
+        margin: 0;
+    }
+
+    .content-bata {
+        flex-wrap: wrap;
+        height: 2000px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+        url('/images/tomas-bata-logo - kopie.jpg');
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-bata h2 {
+        padding-top: 50%;
+        font-size: 90px;
+    }
+
+    .content-bata h3 {
+        padding-top: 60%;
+        font-size: 20px;
+    }
+
+    .cards-wrapper {
+        margin-top: 20%;
+    }
+
+    .mezera {
+        text-align: center;
+        height: 100px;
+        background-color: #d3d3d3;
+
+    }
+
+    .mezera h1{
+        font-size: 60px;
+    }
+
+    .content-bata-2 h2 {
+        font-size: 28px;
+        color: #fff;
+        max-width: 50%;
+        margin-left: 45%;
+        margin-top: 35%;
+        text-align: center;
+    }
+    .logo-k {
+        width: 0;
+
+        background-color: rgba(240, 240, 240, 0.37);
+
+    }
+    .fade-transition {
+        height: 300px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #d3d3d3);
+    }
+
+    .fade-transition-i {
+        height: 100px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #d3d3d3);
+    }
+
+    .fade-transition-footer-i {
+        height: 100px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #d3d3d3);
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 70px;
+    }
+
+    .fade-transition-footer-f {
+        height: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #d3d3d3);
+    }
+
+
+}
