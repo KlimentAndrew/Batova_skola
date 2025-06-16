@@ -65,7 +65,7 @@ body, html {
     height: 100vh;
     background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.4)),
-            url('/images/pozadi.jpg');
+            url('images/pozadi.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@ body, html {
     height: 1800px;
     background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-            url('/images/tomas-bata-logo - kopie.jpg');
+            url('images/tomas-bata-logo - kopie.jpg');
     background-size: cover;
     background-position: 35%;
     background-repeat: no-repeat;
@@ -578,7 +578,7 @@ form button:hover {
     height: 700px;
     background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-            url('/images/bata.webp');
+            url('images/bata.webp');
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
