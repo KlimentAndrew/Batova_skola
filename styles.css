@@ -120,18 +120,18 @@ body, html {
 
 .content-bata h2 {
     font-size: 55px;
-    margin-bottom: -10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-bottom: 13%;
+    margin-left: 14%;
+    margin-right: 4%;
     color: rgb(255, 255, 255);
 
 }
 
 .content-bata h3 {
     font-size: 24px;
-    margin-bottom: -14%;
-    margin-left: -17%;
-    margin-right: 2%;
+    margin-bottom: 9%;
+    margin-left: -15%;
+    margin-right: 1%;
     color: #000000;
 }
 
@@ -142,7 +142,10 @@ body, html {
     gap: 100px;
     margin-top: 150px;
     width: 800px;
+}
 
+.cards-wrapper h4{
+    color: #e04c4c;
 }
 
 .card {
@@ -190,7 +193,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 140px;
+    gap: 50px;
     margin-bottom: 40px;
     flex-wrap: wrap;
 }
@@ -233,6 +236,7 @@ body, html {
 
 .card h2 {
     font-size: 60px;
+    color:#e04c4c
 }
 
 .card p {
@@ -328,7 +332,7 @@ body, html {
     text-align: center;
     padding: 20px;
     background-color: rgb(67, 67, 67);
-    color: #000000;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 14px;
     border-top: 1px solid #ccc;
 }
@@ -635,14 +639,30 @@ form button:hover {
     }
 
     .card-left, .card-right {
+
+        height: 500px;
+        width: 400px;
+        align-self: center;
         margin: 0;
     }
 
+    .card-left h4, .card-right h4{
+        font-size: 36px;
+        margin-bottom: -0%;
+    }
+
+    .card-right  p{
+
+    }
+
+
+
+
+
     .content-bata {
         flex-wrap: wrap;
-        height: 2000px;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-        url('/images/tomas-bata-logo - kopie.jpg');
+        height: 3200px;
+        background-color: rgba(133, 114, 114, 0.11);
         background-size: cover;
         background-position: 50%;
         background-repeat: no-repeat;
@@ -653,12 +673,13 @@ form button:hover {
     }
 
     .content-bata h2 {
-        padding-top: 50%;
+        padding-top: 30%;
         font-size: 90px;
     }
 
     .content-bata h3 {
-        padding-top: 60%;
+        padding-top: -20%;
+        margin-left: 25%;
         font-size: 20px;
     }
 
@@ -678,17 +699,19 @@ form button:hover {
     }
 
     .content-bata-2 h2 {
-        font-size: 28px;
+        max-width: 65%;
+        height: 28px;
         color: #fff;
-        max-width: 50%;
-        margin-left: 45%;
-        margin-top: 35%;
+        margin-top: -35%;
         text-align: center;
-    }
-    .logo-k {
-        width: 0;
+        margin-left: 15%;
+        font-size: 28px;
 
-        background-color: rgba(240, 240, 240, 0.37);
+    }
+    .logo-kontakty {
+        background-color: white;
+        display: flex;
+        width: 10%;
 
     }
     .fade-transition {
@@ -716,6 +739,12 @@ form button:hover {
         height: 0;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #d3d3d3);
     }
+
+    .hero img {
+        width: 80%;
+    }
+
+
 
 
 }
